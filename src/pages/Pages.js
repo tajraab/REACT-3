@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
+import "./style.css";
 
 function Pages() {
   const navigate = useNavigate();
@@ -7,9 +8,12 @@ function Pages() {
     <div
       style={{
         display: "flex",
-        gap: "30px",
-        justifyContent: "right",
-        marginRight: "50px",
+        width: "100%",
+        gap: "20px",
+        justifyContent: "center",
+        marginRight: "20px",
+        padding: "50px",
+        backgroundColor: "grey",
       }}
     >
       <button onClick={() => navigate("/posts")}>POSTS</button>

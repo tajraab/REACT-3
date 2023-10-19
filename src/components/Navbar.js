@@ -3,6 +3,7 @@ import React from "react";
 import Posts from "../pages/Posts";
 import Pages from "../pages/Pages";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+
 function Navbar() {
   //   const navigate = useNavigate();
   return (
