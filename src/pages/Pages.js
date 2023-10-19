@@ -4,9 +4,16 @@ import { Link, useNavigate } from "react-router-dom";
 function Pages() {
   const navigate = useNavigate();
   return (
-    <div>
-      <h1>THIS IS ABOUT US PAGE</h1>
-      <button onClick={() => navigate("/posts")}>ABOUT</button>
+    <div
+      style={{
+        display: "flex",
+        gap: "30px",
+        justifyContent: "right",
+        marginRight: "50px",
+      }}
+    >
+      <button onClick={() => navigate("/posts")}>POSTS</button>
+      <button onClick={() => navigate("/")}>PAGE</button>
     </div>
   );
 }
