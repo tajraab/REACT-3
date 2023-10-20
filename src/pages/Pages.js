@@ -23,3 +23,4 @@ function Pages() {
 }
 
 export default Pages;
+//za domaci napraviti tri foldera za css,tri za js
