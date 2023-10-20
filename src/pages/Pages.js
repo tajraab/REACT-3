@@ -24,3 +24,6 @@ function Pages() {
 
 export default Pages;
 //za domaci napraviti tri foldera za css,tri za js
+//tri foldera u jedan veliki pages
+//components -1 folder js+css(Header +css),Product Card js+css,PostCard js+css
+//footer napraviti svoj
