@@ -3,12 +3,19 @@ import react from "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Pages from "./pages/Pages";
 import Posts from "./pages/Posts";
-import Navbar from "./components/Navbar";
-
+import Header from "components/Header";
+import ProductsPage from "./pages/ProductsPage";
 function App() {
   return (
-    <div className="App">
-      <Navbar />
+    <div>
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Pages />} />
+          <Route path="/posts" element={<PostsPage />} />
+          <Route path="/products" element={<ProductsPage />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
