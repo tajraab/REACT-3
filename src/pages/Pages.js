@@ -13,7 +13,7 @@ function Pages() {
         justifyContent: "center",
         marginRight: "20px",
         padding: "50px",
-        backgroundColor: "grey",
+        backgroundColor: "pink",
       }}
     >
       <button onClick={() => navigate("/posts")}>POSTS</button>
