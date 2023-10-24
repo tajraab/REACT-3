@@ -1,19 +1,18 @@
 import logo from "./logo.svg";
 import react from "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Pages from "./pages/Pages";
-import Posts from "./pages/Posts";
-import Header from "./components/Header";
-import ProductsPage from "./pages/ProductsPage";
+import PostsPage from "./pages1/Posts/PostsPage";
+import SinglePosts from "./pages1/SonglePosts/SinglePosts";
+
 function App() {
   return (
     <div>
       <BrowserRouter>
-        <Header />
+        {/* <Header /> */}
         <Routes>
-          <Route path="/" element={<Pages />} />
-          <Route path="/posts" element={<Posts />} />
-          <Route path="/products" element={<ProductsPage />} />
+          <Route path="/" element={<PostsPage />} />
+          <Route path="/posts" element={<SinglePosts />} />
+          {/* <Route path="/products" element={<ProductsPage />} /> */}
         </Routes>
       </BrowserRouter>
     </div>
