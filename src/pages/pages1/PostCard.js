@@ -1,5 +1,14 @@
 import React from "react";
+import "./style.css";
+import { useNavigate } from "react-router-dom";
 
-export default function PostCard() {
-  return <div>PostCard</div>;
+function PostCard({ post }) {
+  const navigate = useNavigate();
+  return (
+    <div className="postCard" onClick={() => navigate(`/posts/${post.id}`)}>
+      <h3>{post.title}</h3>
+      <p>{post.body}</p>
+    </div>
+  );
 }
+export default PostCard;
