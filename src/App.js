@@ -21,13 +21,17 @@ function App() {
       <BrowserRouter>
         <Header />
         <Routes>
-          <Route path="/" element={<PostsPage />} />
-          <Route path="/posts/:id" element={<SinglePosts />} />
-          <Route path="/products" element={<ProductsPage />} />
+          <Route path="/" element={<Homepage />} />
+          <Route path="/product" element={<ProductPage/>} />
+          <Route path="/posts/:id" element={<SinglePost />} />
+          <Route path="/product/:id"element={<SingleProduct/>}/>
+          <Route path="/contact" element={<Contact/>}/>
         </Routes>
+        <Footer/>
       </BrowserRouter>
     </div>
   );
 }
+export default App; 
 
-export default App;
+
