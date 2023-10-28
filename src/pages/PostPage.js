@@ -1,8 +1,15 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import "./PostPage.css";
+import { useNavigate } from "react-router-dom";
+import axios from "axios";
 
-function ProductsPage() {
-  return (
-    <div style={{ backgroundColor: "red", minHeight: "90vh" }}>Products</div>
-  );
+function PostPage(posts) {
+  const [data, setData] = useState([]);
+  const navigate = useNavigate();
+  useEffect(() => {
+    axios.get("https://dummyjson.com/posts").then((res) => {
+      setData(res.data.posts);
+    }).catch;
+  });
+  return <div>PostPage</div>;
 }
-export default ProductsPage;

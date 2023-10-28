@@ -1,9 +1,7 @@
-import React from "react";
-import { useParams } from "react-router-dom";
+import React from 'react'
 
-function SinglePosts() {
-  const { tajra } = useParams();
-  console.log(tajra);
-  return <div>{tajra}</div>;
+export default function ProductPage() {
+  return (
+    <div>ProductPage</div>
+  )
 }
-export default SinglePosts;
