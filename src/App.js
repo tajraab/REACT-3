@@ -1,18 +1,10 @@
-import logo from "./logo.svg";
-import react from "./App.css";
-import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Contact from "./pages/Contact/Contact";
-import Header from "./pages/Header/Header";
-import Homepage from "./pages/HomePage/HomePage";
-import PostPage from "./pages/PostPage/PostPage";
-import ProductPage from "./pages/ProductPage/ProductPage";
-import SinglePost from "./pages/SinglePost";
-import SingleProduct from "./pages/SingleProduct/SingleProduct";
-import react from "./Header.css";
-import react from "./PostPage.css";
-import react from "./HomePage.css";
-import Footer from "./Footer/Footer/Footer";
+import "./App.css";
+import Header from "./components/Header/Header";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import HomePage from "./pages/Home/HomePage";
+import PostsPage from "./pages/Posts/PostsPage";
+import ProductsPage from "./pages/Products/ProductsPage";
+import SinglePost from "./pages/SinglePost/SinglePost";
 
 function App() {
   return (
@@ -20,15 +12,14 @@ function App() {
       <BrowserRouter>
         <Header />
         <Routes>
-          <Route path="/" element={<Homepage />} />
-          <Route path="/product" element={<ProductPage />} />
+          <Route path="/" element={<HomePage />} />
+          <Route path="/posts" element={<PostsPage />} />
           <Route path="/posts/:id" element={<SinglePost />} />
-          <Route path="/product/:id" element={<SingleProduct />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/products" element={<ProductsPage />} />
         </Routes>
-        <Footer />
       </BrowserRouter>
     </div>
   );
 }
+
 export default App;

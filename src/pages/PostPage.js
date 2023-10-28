@@ -9,7 +9,26 @@ function PostPage(posts) {
   useEffect(() => {
     axios.get("https://dummyjson.com/posts").then((res) => {
       setData(res.data.posts);
-    }).catch;
+    }).catch((error)=>
+    console.error("Eror fetching data",error));
   });
-  return <div>PostPage</div>;
+   } ,[] );
+  return <div className="container2">
+    <ul className="glava">
+      {data.map((el)=>(
+
+      
+      <div key={el.id}
+      className="key"
+      onClick={()=>navigate(`/posts/${el.id}`)}>
+        <h4>{el.title}</h4>
+        <p>{el.body}</p>
+      </div>
+       ) ) }
+      
+    </ul>
+  </div>;
+   );
+
 }
+export default PostPage;
