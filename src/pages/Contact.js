@@ -1,28 +1,19 @@
 import React from "react";
-import { Link, useNavigate } from "react-router-dom";
-import "./style.css";
 
-function Pages() {
-  const navigate = useNavigate();
+function Contact() {
+  
   return (
-    <div
-      style={{
-        display: "flex",
-        width: "100%",
-        gap: "20px",
-        justifyContent: "center",
-        marginRight: "20px",
-        padding: "50px",
-        backgroundColor: "pink",
-      }}
-    >
-      <button onClick={() => navigate("/posts")}>POSTS</button>
-      <button onClick={() => navigate("/")}>PAGE</button>
+    <div>
+      <p>+381628106021-Racunovodja</p>
+      <p>+381615896231-Konsultant</p>
+      <p>+381625947362-Kordinator</p>
+      <p>+381659672535-Izdavac</p>
+      <p>+381654032689-Izvrsni direktor</p>
     </div>
   );
 }
 
-export default Pages;
+export default Contact;
 //za domaci napraviti tri foldera za css,tri za js
 //tri foldera u jedan veliki pages
 //components -1 folder js+css(Header +css),Product Card js+css,PostCard js+css
