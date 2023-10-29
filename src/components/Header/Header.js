@@ -9,7 +9,7 @@ function Header() {
     <div className="container">
       <div>
         <img
-          src="pravilogo.png"
+          src="homepage-icon-free-vector.jpg"
           style={{ cursor: "pointer" }}
           height={60}
           onClick={() => navigate("/")}

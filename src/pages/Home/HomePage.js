@@ -7,9 +7,9 @@ function HomePage() {
 
   return (
     <div className="welcomeContainer">
-      <h1>Welcome to my home page</h1>
+      <h1>WELCOME TO MY HOME PAGE</h1>
       <div>
-        <h3>If you want to see our service, go to </h3>
+        <h3>This page contains posts and products </h3>
         <div
           style={{
             display: "flex",
@@ -17,13 +17,15 @@ function HomePage() {
             alignItems: "center",
             gap: "20px",
             marginTop: "30px",
+            // fontFamily:
+            //   "Impact, Haettenschweiler, Arial Narrow Bold, sans-serif",
           }}
         >
           <button
             onClick={() => navigate("/products")}
             style={{
               padding: "20px 30px",
-              backgroundColor: "green",
+              backgroundColor: "lightblue",
               borderRadius: "10px",
               border: "none",
               outline: "none",
@@ -31,14 +33,14 @@ function HomePage() {
               cursor: "pointer",
             }}
           >
-            Products
+            PRODUCTS
           </button>
           <p>or</p>
           <button
             onClick={() => navigate("/posts")}
             style={{
               padding: "20px 30px",
-              backgroundColor: "green",
+              backgroundColor: "lightblue",
               borderRadius: "10px",
               border: "none",
               outline: "none",

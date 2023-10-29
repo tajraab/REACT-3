@@ -2,7 +2,7 @@ import React from "react";
 
 function ProductsPage() {
   return (
-    <div style={{ backgroundColor: "red", minHeight: "90vh" }}>Products</div>
+    <div style={{ backgroundColor: "gray", minHeight: "90vh" }}></div>
   );
 }
 

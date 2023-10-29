@@ -1,9 +1,12 @@
 .welcomeContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    background-color: yellow;
-    height: 90vh;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: pink;
+  color: rgba(107, 80, 80, 0.51);
+  height: 90vh;
+  font-size: 20px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
