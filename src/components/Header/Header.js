@@ -1,6 +1,7 @@
 import React from "react";
 import "./style.css";
 import { NavLink, useNavigate } from "react-router-dom";
+import Logo from "./homepage-icon-free-vector.jpg";
 
 function Header() {
   const navigate = useNavigate();
@@ -9,7 +10,7 @@ function Header() {
     <div className="container">
       <div>
         <img
-          src="homepage-icon-free-vector.jpg"
+          src={Logo}
           style={{ cursor: "pointer" }}
           height={60}
           onClick={() => navigate("/")}

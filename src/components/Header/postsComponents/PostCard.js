@@ -12,7 +12,7 @@ function PostCard({ post }) {
       onClick={() => navigate(`/posts/${post.id}`, { state: post })}
     >
       <h3>{post.title}</h3>
-
+      
       <p>{post.body}</p>
     </div>
   );

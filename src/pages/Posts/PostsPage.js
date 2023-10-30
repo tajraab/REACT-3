@@ -1,8 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { BASE_URL } from "../../utils";
-import PostCard from "./components/postsComponents/PostCard";
-
+import PostCard from "../../components/Header/postsComponents/PostCard";
 function PostsPage() {
   const [posts, setPosts] = useState([]);
 
